@@ -21,17 +21,15 @@ For more information, refer to <a href = "https://docs.github.com/en" target = "
 
 4. Kindly wait for the approval from the maintainers of this project before starting to work on any issue.
 
-5. *Do not make changes to the main branch.* All the changes should be made to the develop branch.
+5. Make sure that your code is properly formatted and does not contain any commented out code.
 
-6. Make sure that your code is properly formatted and does not contain any commented out code.
+6. Create a pull request after making the required changes and do mention the issue number that your pull request is related to.
 
-7. Create a pull request after making the required changes and do mention the issue number that your pull request is related to.
+7. Finally, wait for it to be reviewed. Make the required changes if the reviewer asks for them. 
 
-8. Finally, wait for it to be reviewed. Make the required changes if the reviewer asks for them. 
+8. Your pull request will be merged once everything seems okay.
 
-9. Your pull request will be merged once everything seems okay.
-
-10. That's it! You have successfully made your contribution to the project.
+9. That's it! You have successfully made your contribution to the project.
 <br>
 
 ## GIT AND GITHUB
@@ -133,7 +131,7 @@ Now you are ready to help the project by opening a pull request means you now te
 
 Remember your upstream base branch should be master and source should be your feature branch. Click on create pull request and add a name to your pull request. You can also describe your feature.
 
-Awesome! You have made your first contribution. For any queries join our Discord server [here](https://discord.com/invite/rAz3Eb8fsN) .
+Awesome! You have made your first contribution.
 
 #### BE OPEN!
 <br>

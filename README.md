@@ -3,6 +3,7 @@
 
 This is a basic full stack web application with HTML, CSS, Bootstrap, Material UI, JavaScript and Python-Django.
 
+
 <br>
 [![License](https://img.shields.io/badge/license-MIT-%2397ca00.svg)](https://github.com/sitamadex11/CovidHelp/blob/develop/LICENSE)
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) 

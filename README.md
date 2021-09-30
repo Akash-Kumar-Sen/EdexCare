@@ -49,3 +49,6 @@ python manage.py runserver
 ```
 Try opening [http://localhost:8000](http://localhost:8000) in the browser.
 Now you are good to go.
+
+#### Welcome to the Home Page
+<img width=“964” alt=“Homepage Image” src=“EdexCare/static/images/imghome.png”>

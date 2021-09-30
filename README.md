@@ -1,5 +1,5 @@
 ![](https://github.com/sitamadex11/CovidHelp/blob/develop/Assets/HackOctoberFestBanner.png)
-#EdexCare 👩‍🎓
+# EdexCare 👩‍🎓
 
 This is a basic full stack web application with HTML, CSS, Bootstrap, Material UI, JavaScript and Python-Django.
 

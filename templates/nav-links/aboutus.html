@@ -1,0 +1,68 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block content %}
+<style>
+    .parent{
+        position: relative;
+    }
+    .action-element{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight:400;
+    }
+    
+    img{
+        margin-top: 55px;
+        width: 100%;
+        height: auto;
+    }
+
+    .pseudo-div{
+        width: 100%;
+        position: relative;
+    }
+    .pseudo-div:after{
+        content: "";
+	    position: absolute;
+	    left: 0px;
+	    top: -12px;
+	    width: 100%;
+	    height: 2px;
+	    background-color: #fc5a03;
+    }
+    </style>
+    <title>EdexCare | About Us</title>
+    <div class="parent">
+        <img src="{% static 'images/Page-title-1.jpg' %}" alt="">
+        <h1 class="action-element" style="top: 50%;"><span style="color: #fc5a03;">About </span><span>Us</span></h1>
+    </div>
+    <div class="container">
+        <div class="section">
+          <h3 class="title text-center">ABOUT EDEXCARE</h3>
+          <h5 class="description pseudo-div" style="color: rgb(30, 30, 30);">
+            <br>
+            Edexcare Learning Services India is the brain child of qualified professionals graduating from 
+            elite institutes of technology and management, each with over two decades of rich and diversified corporate 
+            exposure in fields spanning engineering project management, financial planning, overseas education, 
+            learning & development in India and abroad. <br><br>
+
+            We have a vintage of more than ten years in servicing satisfied clients both in the 
+            government as well as in the private sector.<br><br>
+
+            Today, Edexcare Learning Services India operates in the following business lines: <br>
+            <i class="fas fa-check-square" style="color: #fc5a03;"></i> &nbsp; Corporate Learning & Development <br>
+            <i class="fas fa-check-square" style="color: #fc5a03;"></i> &nbsp;Employability Enhancement for young managers <br>
+            <i class="fas fa-check-square" style="color: #fc5a03;"></i> &nbsp;Overseas Education Admission Management <br>
+            <i class="fas fa-check-square" style="color: #fc5a03;"></i> &nbsp;Himalayan Treks <br><br>
+
+            In the field of Corporate L & D, Edexcare Learning Services India has been servicing 
+            reputed / MNC clients in domains like Engineering, Banking, FMCG, 
+            Financial Services, Insurance, Real Estate and Telecom.<br><br>
+
+            Please find the list of typical workshops facilitated by our training professionals for reputed corporate houses across India as a separate Annexure.
+          </h5>
+        </div>
+    </div>
+
+{% endblock %}

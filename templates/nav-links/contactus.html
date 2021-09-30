@@ -1,0 +1,129 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block content %}
+<!--Style Block-->
+<style>
+    .parent{
+        position: relative;
+    }
+    .action-element{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight:400;
+    }
+    
+    img{
+        margin-top: 55px;
+        width: 100%;
+        height: auto;
+    }
+
+    .pseudo-div{
+        width: 100%;
+        position: relative;
+    }
+    .pseudo-div:after{
+        content: "";
+	    position: absolute;
+	    left: 0px;
+	    top: -12px;
+	    width: 98%;
+	    height: 2px;
+	    background-color: #fc5a03;
+    }
+    h5{
+        font-weight: 400;
+    }
+    .form-check .form-check-input:checked ~ .form-check-sign .check {
+        background: #fc5a03 !important;
+    }
+
+    .btn.btn-primary {
+        background-color: #fc5a03 !important;
+        border-color: #fc5a03 !important;
+    }
+    .bmd-label-floating{
+        color: rgb(30, 30, 30)!important;
+    }
+    .form-check-label{
+        color: rgb(30, 30, 30)!important;
+    }
+    #id_is_interested{
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+</style>
+    <title>EdexCare | Contact Us</title>
+    <div class="parent">
+        <img src="{% static 'images/Page-title-1.jpg' %}" alt="">
+        <h1 class="action-element title text-center" style="top: 50%;"><span style="color: #fc5a03;">Contact </span><span>Us</span></h1>
+    </div>
+    <div class="container">
+        <div class="section">
+            <h3 class="title text-center">Contact Details</h3>
+            <h5 class="description pseudo-div" style="color: rgb(30, 30, 30);"></h5>
+            <div class="card text-center">
+                <h4 style="color: #fc5a03;">Office</h4>
+                <ul>
+                    <li><a href="#" style="color: rgb(30, 30, 30);"><i class="fas fa-home"></i>&nbsp; 4D MEGHNA, KOLKATA - 74</a></li>
+                    <li><a href="mailto:ayan@edxcare.in" style="text-transform: lowercase;color: rgb(30, 30, 30);"><i class="fas fa-envelope"></i>&nbsp; ayan@edxcare.in</a></li>
+                    <li><a href="tel:+919874306851" style="color: rgb(30, 30, 30);"><i class="fas fa-phone-alt"></i>&nbsp; +91 9874306851</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+        <div class="section col-md-12 col-lg-12" style="padding-top: 0px;">
+          <h3 class="title text-center">For all your learning needs, please get in touch:</h3>
+          {% include 'includes/alerts.html' %}
+          <h5 class="description pseudo-div" style="color: rgb(30, 30, 30);"></h5>
+          <div class="card">
+              <div class="container">
+                <form class="contact-form" method="POST" action="{% url 'contactus'%}">
+                    {% csrf_token %} 
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                          <div class="form-group bmd-form-group">
+                            <label class="bmd-label-floating">First Name</label>
+                            {{form.first_name}}
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                          <div class="form-group bmd-form-group">
+                            <label class="bmd-label-floating">Last Name</label>
+                            {{form.last_name}}
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                          <div class="form-group bmd-form-group">
+                            <label class="bmd-label-floating">Email Address</label>
+                            {{form.email}}
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                          <div class="form-group bmd-form-group">
+                            <label class="bmd-label-floating">Mobile Number</label>
+                            {{form.phone}}
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group bmd-form-group">
+                        <label for="exampleMessage" class="bmd-label-floating">Your Message</label>
+                        {{form.message}}
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4 ml-auto mr-auto text-center">
+                        <input class="btn btn-primary btn-raised" type="submit" value="submit">
+                        </div>
+                      </div>
+                    </form>
+              </div>
+          </div>
+        </div>
+        </div>
+    </div>
+{% endblock %}

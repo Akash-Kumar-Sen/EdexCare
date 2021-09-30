@@ -1,0 +1,57 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block content %}
+<style>
+    .parent{
+        position: relative;
+    }
+    .action-element{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight:400;
+    }
+    
+    img{
+        margin-top: 55px;
+        width: 100%;
+        height: auto;
+    }
+
+    .pseudo-div{
+        width: 100%;
+        position: relative;
+        color: #fc5a03; 
+        font-weight: 400;
+    }
+    .pseudo-div:after{
+        content: "";
+	    position: absolute;
+	    left: 0px;
+	    top: -12px;
+	    width: 100%;
+	    height: 2px;
+	    background-color: #fc5a03;
+    }
+    .icon-res{
+        color: #fc5a03; 
+    }
+    </style>
+    <title>EdexCare | Resources</title>
+    <div class="parent">
+        <img src="{% static 'images/Page-title-1.jpg' %}" alt="">
+        <h1 class="action-element title text-center" style="top: 50%;"><span style="color: #fc5a03;">All </span><span>Downloads</span></h1>
+    </div>
+    <div class="container">
+        <div class="section">
+          <h3 class="title text-center">List Of Downloads Available (Click to Download)</h3>
+          <h5 class="description pseudo-div">
+            <br>
+            {% for resource in resources %}
+            <a class="icon-res" href="{{resource.document.url}}"><i class="fas fa-cloud-download-alt"></i> &nbsp;{{resource.title}} <br></a>
+            {% endfor %}
+          </h5>
+        </div>
+    </div>
+    <i class=""></i>
+{% endblock %}

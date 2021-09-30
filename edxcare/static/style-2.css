@@ -1,0 +1,86 @@
+.main-title {
+	width: 500px;
+	position: fixed;
+	top: 150px;
+	left: 125px;
+}
+
+.main-title h1,
+h4 {
+	font-family: "Roboto Slab", "Times New Roman", serif;
+	color: white;
+}
+
+.main-title h1 {
+	font-weight: 500;
+}
+
+.section {
+	padding-top: 40px !important;
+	padding-bottom: 10px !important;
+}
+.info {
+	padding-top: 20px !important;
+}
+
+.info-title {
+	margin-top: 14px !important;
+}
+
+.info-para {
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+}
+
+.tab-content {
+	height: 350px;
+}
+
+.btn-orange {
+	background-color: #fc5a03;
+}
+
+.btn-orange:hover {
+	background-color: #fc5a03;
+	box-shadow: 2px;
+}
+
+.btn-card {
+	width: 50%;
+	margin: auto;
+	margin-bottom: 1rem;
+}
+
+#carouselExampleIndicators {
+	padding-top: 1.5rem;
+}
+
+.card-description {
+	padding-left: 3rem;
+	padding-right: 3rem;
+	padding-top: 1rem;
+}
+
+.card-title {
+	margin-bottom: 0px;
+}
+
+.logo {
+	font-family: "Algerian", sans-serif;
+	color: black !important;
+}
+
+.logo span {
+	font-family: "Algerian", sans-serif;
+	color: #87ceeb !important;
+	font-size: 2rem;
+}
+
+header {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.navbar-link {
+	color: #fc5a03 !important;
+}

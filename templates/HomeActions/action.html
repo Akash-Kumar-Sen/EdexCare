@@ -1,0 +1,141 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block content %}
+
+<!--Style Block-->
+<style>
+    .parent{
+        position: relative;
+    }
+    .action-element{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight:400;
+    }
+    
+    img{
+        margin-top: 55px;
+        width: 100%;
+        height: auto;
+    }
+
+    .pseudo-div{
+        width: 100%;
+        position: relative;
+    }
+    .pseudo-div:after{
+        content: "";
+	    position: absolute;
+	    left: 0px;
+	    top: -12px;
+	    width: 100%;
+	    height: 2px;
+	    background-color: #fc5a03;
+    }
+    h5{
+        font-weight: 400;
+    }
+    .form-check .form-check-input:checked ~ .form-check-sign .check {
+        background: #fc5a03 !important;
+    }
+
+    .btn.btn-primary {
+        background-color: #fc5a03 !important;
+        border-color: #fc5a03 !important;
+    }
+    .bmd-label-floating{
+        color: rgb(30, 30, 30)!important;
+    }
+    .form-check-label{
+        color: rgb(30, 30, 30)!important;
+    }
+    #id_is_interested{
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+    textarea .form-control{
+      background-image: linear-gradient(to top, #fc5a03 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
+    }
+</style>
+
+<!--Title-->
+<title>EdexCare | {{action.name}}</title>
+
+<!-- Meta Description -->
+
+<!--Heading-->
+<div class="parent">
+  <img src="{% static 'images/Page-title-1.jpg' %}" alt="">
+  <h1 class="action-element" style="top: 50%;"><span style="color: #fc5a03;">{{action.name}}</span></h1>
+</div>
+
+<!--Main Container -->
+<div class="container">
+  <div class="section">
+    <h3 class="title text-center">About {{action.name}}</h3>
+    {% include 'includes/alerts.html' %}
+    <h5 class="description pseudo-div" style="color: rgb(30, 30, 30);">
+
+      <!--Description Text-->
+      <br>{{action.description}} <br><br>
+
+      <!-- Bullet Points -->
+      {% if action_bullets %}
+      <strong>Key Points: 
+      </strong><br><br>
+      {% endif %}
+
+      {% for item in action_bullets %}
+        <i class="fas fa-check-square" style="color: #fc5a03;"></i> &nbsp; {{item.bulletpoint}}<br>
+      {% endfor %}<br><br>
+
+      <!-- Form Card -->
+      <strong>Customer Form: </strong><br> 
+      <div class="card">
+          <div class="container">
+            <form class="contact-form" method="POST" action="{{ action.get_url }}">
+              {% csrf_token %} 
+                <div class="form-group bmd-form-group">
+                  <label class="bmd-label-floating">Name</label>
+                  {{form.name}}
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-lg-6">
+                    <div class="form-group bmd-form-group">
+                      <label class="bmd-label-floating">Email Address</label>
+                      {{form.email}}
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-6">
+                    <div class="form-group bmd-form-group">
+                      <label class="bmd-label-floating">WhatsApp Number</label>
+                      {{form.whatsapp_number}}
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group bmd-form-group">
+                  <label for="exampleMessage" class="bmd-label-floating">Details of service required</label>
+                  {{form.details}}
+                </div>
+                <div class="row">
+                  <div class="col-sm-12 col-12">
+                    <div class="form-group bmd-form-group">
+                      {{ form.is_interested }} 
+                      <label class="form-check-label">I am interested to Sign Up for '{{action.name}}'</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4 ml-auto mr-auto text-center">
+                  <input class="btn btn-primary btn-raised" type="submit" value="submit">
+                  </div>
+                </div>
+              </form>
+            </div>
+      </div>
+    </h5>
+  </div>
+</div>
+
+{% endblock %}

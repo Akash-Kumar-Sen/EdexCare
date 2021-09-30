@@ -11,6 +11,7 @@ Install ```python-3.7.2``` and ```python-pip```. Follow the steps from the below
 Reference: [https://docs.python-guide.org/starting/installation/](https://docs.python-guide.org/starting/installation/)
 
 #### 2. Setup virtual environment
+Reference : https://docs.python.org/3/library/venv.html
 ```bash
 # Install virtual environment
 sudo pip install virtualenv

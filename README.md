@@ -4,7 +4,7 @@
 This is a basic full stack web application with HTML, CSS, Bootstrap, Material UI, JavaScript and Python-Django.
 
 
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+Welcome!
 <br>
 ![Minimum API Level](https://img.shields.io/badge/Min%20API%20Level-23-green)
 ![Maximum API Level](https://img.shields.io/badge/Max%20API%20Level-30-orange)

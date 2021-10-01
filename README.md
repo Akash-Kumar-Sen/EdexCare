@@ -78,3 +78,7 @@ python manage.py runserver
 ```
 Try opening [http://localhost:8000](http://localhost:8000) in the browser.
 Now you are good to go.
+
+<br>
+<h2 align="center">❤ Our Aim to Help People ❤</h2>
+<br>

@@ -3,6 +3,8 @@
 This is a basic full stack web application with HTML, CSS, Bootstrap, Material UI, JavaScript and Python-Django.
 ### Welcome!
 <br>
+
+
 ![Minimum API Level](https://img.shields.io/badge/Min%20API%20Level-23-green)
 ![Maximum API Level](https://img.shields.io/badge/Max%20API%20Level-30-orange)
 ![GitHub repo size](https://img.shields.io/github/repo-size/sitamadex11/CovidHelp)

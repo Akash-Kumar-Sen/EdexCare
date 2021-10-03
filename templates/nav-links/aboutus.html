@@ -2,20 +2,14 @@
 {% load static %}
 {% block content %}
 <style>
-    .parent{
+     .parent{
         position: relative;
-    }
+    } 
     .action-element{
         position: absolute;
         left: 50%;
         transform: translate(-50%, -50%);
         font-weight:400;
-    }
-    
-    img{
-        margin-top: 55px;
-        width: 100%;
-        height: auto;
     }
 
     .pseudo-div{
@@ -34,7 +28,7 @@
     </style>
     <title>EdexCare | About Us</title>
     <div class="parent">
-        <img src="{% static 'images/Page-title-1.jpg' %}" alt="">
+        <img class="responsiveImg" src="{% static 'images/Page-title-1.jpg' %}" alt=""> 
         <h1 class="action-element" style="top: 50%;"><span style="color: #fc5a03;">About </span><span>Us</span></h1>
     </div>
     <div class="container">

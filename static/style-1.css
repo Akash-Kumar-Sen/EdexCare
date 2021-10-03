@@ -39,7 +39,6 @@ header .logo span {
 
 header .navbar a {
 	font-size: 1rem;
-	margin-left: 2rem;
 	color: var(--purple);
 }
 .navbar-link {
@@ -67,4 +66,10 @@ header .navbar a {
 
 .navbar-link:hover:after {
 	width: 100%;
+}
+@media screen and (max-width:550px){
+	body{
+		color:#814096 !important;
+	}
+	
 }

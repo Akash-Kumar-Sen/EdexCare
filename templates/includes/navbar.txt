@@ -1,0 +1,27 @@
+    <a href="{% url 'index'%}" class="logo">Ede<span>X</span>Care Learning Services India</a>
+    <nav class="navbar">
+        <a class="navbar-link active" href="{% url 'index'%}">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            Home
+        </a>
+        <a class="navbar-link" href="{% url 'aboutus'%}">
+            <i class="fa fa-male" aria-hidden="true"></i>&nbsp;
+            About Us
+        </a>
+        <a class="navbar-link" href="{% url 'index'%}#learnmore">
+            <i class="fa fa-trophy" aria-hidden="true"></i>
+            Our Solutions
+        </a>
+        <a class="navbar-link" href="{% url 'resources'%}">
+            <i class="fa fa-folder-open" aria-hidden="true"></i>
+            Resources
+        </a>
+        <a class="navbar-link" href="{% url 'contactus'%}">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            Contact
+        </a>
+        <a class="navbar-link" href="#home">
+            <i class="fas fa-sign-in-alt"></i>
+            Login/Register
+        </a>
+    </nav>

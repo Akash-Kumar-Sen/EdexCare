@@ -1,30 +1,31 @@
 {% load static %}
 <header>
-    <a href="{% url 'index'%}" class="logo">Ede<span>X</span>Care Learning Services India</a>
-    <nav class="navbar">
-        <a class="navbar-link active" href="{% url 'index'%}">
-            <i class="fa fa-home" aria-hidden="true"></i>
-            Home
-        </a>
-        <a class="navbar-link" href="{% url 'aboutus'%}">
-            <i class="fa fa-male" aria-hidden="true"></i>&nbsp;
-            About Us
-        </a>
-        <a class="navbar-link" href="{% url 'index'%}#learnmore">
-            <i class="fa fa-trophy" aria-hidden="true"></i>
-            Our Solutions
-        </a>
-        <a class="navbar-link" href="{% url 'resources'%}">
-            <i class="fa fa-folder-open" aria-hidden="true"></i>
-            Resources
-        </a>
-        <a class="navbar-link" href="{% url 'contactus'%}">
-            <i class="fa fa-phone" aria-hidden="true"></i>
-            Contact
-        </a>
-        <a class="navbar-link" href="#home">
-            <i class="fas fa-sign-in-alt"></i>
-            Login/Register
-        </a>
-    </nav>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a href="{% url 'index'%}" class="logo navbar-brand">Ede<span class="decorate">X</span>Learning
+            <small class="hidden"> Services India</small> 
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span>&#9776;</span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
 </header>

@@ -15,17 +15,18 @@
 }
 
 header {
-	position: fixed;
+	position: relative;
 	top: 0;
 	left: 0;
 	width: 100%;
 	background: #fff;
 	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-	padding: 1rem 9%;
+	padding: 1rem 5%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	z-index: 1000;
+
 }
 
 header .logo {
@@ -36,10 +37,14 @@ header .logo {
 header .logo span {
 	color: var(--pink);
 }
-
+header nav{
+	width:100%;
+}
+.mycard{
+	margin-top: -27px;;
+}
 header .navbar a {
 	font-size: 1rem;
-	margin-left: 2rem;
 	color: var(--purple);
 }
 .navbar-link {
@@ -67,4 +72,13 @@ header .navbar a {
 
 .navbar-link:hover:after {
 	width: 100%;
+}
+.responsiveImg{
+	width: 100%;
+	height: 150px;
+}
+@media screen and (max-width:550px){
+	header .logo .hidden{
+		display: none;
+	}
 }
